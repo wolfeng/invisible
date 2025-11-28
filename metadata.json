@@ -1,0 +1,7 @@
+{
+  "name": "隐形人",
+  "description": "一个AR体验，你将变成隐形的液体，只有通过特定的手势才能显形。",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
