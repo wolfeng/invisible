@@ -204,10 +204,15 @@ const App: React.FC = () => {
           </div>
         )}
 
-        {/* Footer debug/info */}
-        <div className="w-full text-center opacity-30 text-xs text-white font-mono">
-           技术支持：TensorFlow MediaPipe & Three.js
-        </div>
+        {/* Footer Gesture Hint */}
+        {appState === AppState.ACTIVE && (
+          <div className="w-full text-center pb-4">
+              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-black/40 backdrop-blur-md border border-white/10 text-cyan-200 text-sm font-bold tracking-widest shadow-[0_0_20px_rgba(0,255,255,0.15)] animate-pulse">
+                 <span className="text-xl">👆</span>
+                 <span>提示：将食指中指贴近头部即可显形</span>
+              </div>
+          </div>
+        )}
       </div>
     </div>
   );
